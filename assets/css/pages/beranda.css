@@ -1,0 +1,1419 @@
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+/* ---------------------------------------------------------
+   CONTAINER
+--------------------------------------------------------- */
+
+.ipk-hero {
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    /* Background image */
+
+    background-image: url("../../img/hero/hero-bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* ---------------------------------------------------------
+   DARK TRANSPARENT OVERLAY
+--------------------------------------------------------- */
+
+.ipk-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 25, 30, 0.48);
+    z-index: 1;
+}
+
+
+/* ---------------------------------------------------------
+   HERO CONTENT
+--------------------------------------------------------- */
+
+.ipk-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 6rem 0;
+}
+
+
+/* ---------------------------------------------------------
+   HERO TEXT
+--------------------------------------------------------- */
+
+.hero-text {
+    max-width: 720px;
+}
+
+.hero-eyebrow {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.hero-title {
+    margin: 0 0 1.5rem;
+    color: #ffffff;
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 0 2rem;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   HERO BUTTON
+--------------------------------------------------------- */
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.75rem 1.35rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 7px;
+    transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
+	background-color: var(--brand);
+	border: none;
+}
+
+.hero-button:hover {
+    transform: translateY(-2px);
+	background-color: var(--brand-light-1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.hero-button:active:focus {
+	transform: translateY(2px);
+	background-color: var(--brand-light-1);
+}
+
+.hero-button i {
+    transition: transform 0.2s ease;
+}
+
+.hero-button:hover i {
+    transform: translateX(3px);
+}
+
+/* ---------------------------------------------------------
+   HERO BUTTON 2
+--------------------------------------------------------- */
+
+.hero-button-outline {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.65rem;
+	padding: 0.75rem 1.35rem;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: white;
+	border-color: white;
+	border-radius: 7px;
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.hero-button-outline:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+	border-color: white;
+}
+
+.hero-button-outline:active:focus {
+	transform: translateY(2px);
+}
+
+.hero-button-outline i {
+    transition: transform 0.2s ease;
+}
+
+.hero-button-outline:hover i {
+    transform: translateX(3px);
+}
+
+
+/* ---------------------------------------------------------
+   SCORE CARD
+--------------------------------------------------------- */
+
+.ipk-score-card {
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+	text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN SCORE
+--------------------------------------------------------- */
+
+.score-main .score-number {
+	display: block;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.03em;
+	padding-bottom: 20px;
+}
+
+.score-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #6c757d;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+	margin-top: 20px;
+}
+
+.score-value {
+    color: #222;
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.score-value span {
+    margin-left: 0.15rem;
+    font-size: 0.45em;
+    font-weight: 600;
+    color: #777;
+}
+
+
+/* ---------------------------------------------------------
+   STATISTICS
+--------------------------------------------------------- */
+
+.score-statistics {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    align-items: stretch;
+    padding: 1.5rem 2.25rem 1.75rem;
+    background: #f5f5f3;
+}
+
+
+/* ---------------------------------------------------------
+   STAT
+--------------------------------------------------------- */
+
+.score-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.65rem;
+}
+
+.stat-label {
+    color: #777;
+    font-size: 0.78rem;
+	line-height: 1.25;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
+.stat-value {
+    color: #333;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+/* Score-detail */
+
+.score-detail .score-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+
+/* ---------------------------------------------------------
+   DIVIDER
+--------------------------------------------------------- */
+
+.stat-divider {
+    width: 1px;
+    height: 100%;
+    background: #d7d7d7;
+}
+
+
+/* ---------------------------------------------------------
+   DARK MODE
+--------------------------------------------------------- */
+
+[data-bs-theme="dark"]
+.ipk-score-card {
+    background: rgba(35, 35, 35, 0.94);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-bs-theme="dark"]
+.score-label {
+    color: #aaa;
+}
+
+[data-bs-theme="dark"]
+.score-value {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"]
+.score-value span {
+    color: #aaa;
+}
+
+[data-bs-theme="dark"]
+.score-statistics {
+    background: #292929;
+}
+
+[data-bs-theme="dark"]
+.stat-label {
+    color: #aaa;
+}
+
+[data-bs-theme="dark"]
+.stat-value {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"]
+.stat-divider {
+    background: #444;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+    .ipk-hero {
+        min-height: auto;
+        background-attachment: scroll;
+    }
+
+    .ipk-hero-content {
+        padding: 5rem 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .ipk-score-card {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ipk-hero-content {
+        padding: 4rem 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+        letter-spacing: -0.8px;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .score-main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	.score-main strong {
+    	display: block;
+    	text-align: center;
+	}
+
+	.score-details > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 0 1rem;
+	}
+
+    .score-value {
+        font-size:  3.2rem;
+    }
+
+    .score-statistics {
+        padding: 1.25rem 1.5rem 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.72rem;
+    }
+
+    .stat-value {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+/* =========================================================
+   ABOUT IPK SECTION
+========================================================= */
+
+.about-ipk {
+    position: relative;
+    min-height: auto;
+    padding: 3.5rem 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: var(--bs-body-color);
+}
+
+
+/* ---------------------------------------------------------
+   IPK BACKGROUND
+--------------------------------------------------------- */
+
+.about-ipk-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image: url("../../svg/backgrounds/indonesian-01.svg");
+	opacity: 0.5;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* ---------------------------------------------------------
+   IPK CONTENT
+--------------------------------------------------------- */
+
+.about-ipk .container {
+    position: relative;
+    z-index: 2;
+}
+
+.about-ipk-content {
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   IPK DESCRIPTION
+--------------------------------------------------------- */
+
+.about-ipk-description {
+    max-width: 760px;
+    margin: 0 auto .75rem;
+    /*color: rgba(255, 255, 255, .88);*/
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   IPK MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 767.98px) {
+    .about-ipk {
+        min-height: auto;
+        padding: 5rem 0;
+    }
+
+    .about-ipk-bg {
+        background-attachment: scroll;
+    }
+
+    .about-ipk-content {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .about-ipk-description {
+        font-size: .95rem;
+        line-height: 1.75;
+    }
+}
+
+
+
+/* =========================================================
+   IPK DIMENSIONS SECTION
+========================================================= */
+
+.ipk-dimensions {
+    padding: 6rem 0;
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+
+/* ---------------------------------------------------------
+   DIMENSION CARD
+--------------------------------------------------------- */
+
+.dimension-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    min-height: 190px;
+    padding: 1.5rem;
+    color: var(--bs-body-color);
+    text-decoration: none;
+    background: var(--bs-tertiary-bg);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 14px;
+    overflow: hidden;
+    transition:
+		transform 0.25s ease,
+		border-color 0.25s ease,
+		box-shadow 0.25s ease,
+		background-color 0.25s ease;
+}
+
+
+/* ---------------------------------------------------------
+   CARD HOVER
+--------------------------------------------------------- */
+
+.dimension-card:hover {
+    color: var(--bs-body-color);
+    transform: translateY(-5px);
+    border-color: var(--brand-light-1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------------------------------------------------------
+   ICON
+--------------------------------------------------------- */
+
+.dimension-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    color: var(--brand-light-1);
+    background: transparent;
+    border-radius: 0;
+    font-size: 2.7rem;
+    transition:
+		transform 0.25s ease,
+		color 0.25s ease;
+}
+
+.dimension-card:hover
+.dimension-icon {
+    transform: translateY(-3px);
+    color: var(--brand-light-1);
+}
+
+
+/* ---------------------------------------------------------
+   TITLE
+--------------------------------------------------------- */
+
+.dimension-title {
+    max-width: 180px;
+    margin: 0;
+    text-align: center;
+    font-size: .95rem;
+    font-weight: 650;
+    line-height: 1.4;
+}
+
+
+/* ---------------------------------------------------------
+   ARROW
+--------------------------------------------------------- */
+
+.dimension-arrow {
+    position: absolute;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    color: var(--bs-secondary-color);
+    font-size: 0.8rem;
+    transition:
+		transform 0.25s ease,
+		color 0.25s ease;
+}
+
+.dimension-card:hover
+.dimension-arrow {
+    color: var(--brand-light-1);
+    transform: translate(3px, -3px);
+}
+
+
+/* ---------------------------------------------------------
+   DARK MODE
+--------------------------------------------------------- */
+
+[data-bs-theme="dark"]
+.dimension-card {
+   
+	background: var(--bs-tertiary-bg);
+}
+
+[data-bs-theme="dark"]
+.dimension-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+--------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+
+    .ipk-dimensions {
+        padding: 5rem 0;
+    }
+
+    .dimension-card {
+        min-height: 180px;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 575.98px) {
+
+    .ipk-dimensions {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-description {
+        font-size: 0.88rem;
+    }
+
+    .dimension-card {
+        min-height: 165px;
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+
+    .dimension-icon {
+        width: auto;
+        height: auto;
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+        background: transparent;
+        border-radius: 0;
+    }
+
+    .dimension-title {
+        max-width: 140px;
+        font-size: 0.85rem;
+    }
+
+    .dimension-arrow {
+        right: 1rem;
+        bottom: 1rem;
+    }
+	
+}
+
+
+
+/* ==========================================================
+   PUBLICATIONS SECTION
+========================================================== */
+
+.publications-section {
+    padding: 5rem 0;
+}
+
+
+/* ---------------------------------------------------------
+   HEADING
+--------------------------------------------------------- */
+
+.publications-section .section-heading {
+    margin-bottom: 3rem;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 767.98px) {
+
+    .publications-section {
+        padding: 4rem 0;
+    }
+
+    .publications-section .section-heading {
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   PUBLICATION CAROUSEL
+--------------------------------------------------------- */
+
+.publication-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+    cursor: grab;
+
+    /* Penting untuk touch/swipe */
+    touch-action: pan-y;
+}
+
+.publication-carousel.is-dragging {
+    cursor: grabbing;
+}
+
+
+/* ---------------------------------------------------------
+   TRACK BUKU
+--------------------------------------------------------- */
+
+.publication-track {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    animation: publication-scroll 30s linear infinite;
+}
+
+
+/* ---------------------------------------------------------
+   DESKTOP 4 BUKU
+--------------------------------------------------------- */
+
+.publication-item {
+    flex: 0 0 
+		calc(
+			(100vw - 36px) / 4
+		);
+    width: 280px;
+    max-width: 280px;
+    min-width: 0;
+}
+
+
+/* ---------------------------------------------------------
+   BOOK COVER
+--------------------------------------------------------- */
+
+.publication-cover {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--bs-tertiary-bg);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    transition:
+		transform .3s ease,
+		box-shadow .3s ease;
+}
+
+.publication-cover img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER
+--------------------------------------------------------- */
+
+.publication-card:hover
+.publication-cover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .13);
+}
+
+
+/* ---------------------------------------------------------
+   TITLE
+--------------------------------------------------------- */
+
+.publication-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.publication-card h3 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+--------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+
+    .publication-item {
+        flex: 0 0
+			calc(
+				(100vw - 24px) / 3
+			);
+        width: auto;
+        max-width: none;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE 2 BUKU
+--------------------------------------------------------- */
+
+@media (max-width: 575.98px) {
+
+    .publication-track {
+        gap: 12px;
+    }
+
+    .publication-item {
+        flex: 0 0
+            calc(
+                (100vw - 12px) / 2
+            );
+
+        width: auto;
+        max-width: none;
+    }
+
+    .publication-card h3 {
+        font-size: .78rem;
+        line-height: 1.4;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   PAUSE ON HOVER
+--------------------------------------------------------- */
+
+.publication-carousel:hover .publication-track {
+    animation-play-state: paused !important;
+}
+
+
+/* =========================================================
+   IPK NATIONAL & PROVINCE
+========================================================= */
+
+.ipk-national,
+.ipk-province {
+    padding: 5rem 0;
+}
+
+.ipk-province {
+    background-color: var(--bs-tertiary-bg);
+}
+
+/* =========================================================
+   NATIONAL
+========================================================= */
+
+/* Year */
+
+.ipk-year-selector {
+    margin-bottom: 2rem;
+}
+
+
+.ipk-year-selector label {
+    display: block;
+    margin-bottom: .4rem;
+    font-size: .8rem;
+    color: var(--bs-secondary-color);
+}
+
+.ipk-year-selector select {
+    width: auto;
+    min-width: 120px;
+    margin: 0 auto;
+}
+
+/* Score */
+
+
+
+.score-label {
+    color: var(--bs-secondary-color);
+    font-size: .85rem;
+}
+
+.national-score {
+    margin: .5rem 0;
+    font-size: clamp(3.5rem, 7vw, 5rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.score-year {
+    color: var(--bs-secondary-color);
+    font-size: .85rem;
+}
+
+
+/* =========================================================
+   NATIONAL CHART
+========================================================= */
+
+.national-chart-card {
+    height: 100%;
+    padding: 2rem;
+    background: var(--bs-body-bg);
+    border:
+        1px solid
+        var(--bs-border-color);
+    border-radius: 18px;
+}
+
+.chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.chart-label {
+    color: var(--bs-secondary-color);
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+.chart-header h3 {
+    margin: .3rem 0 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.chart-header > i {
+    font-size: 1.5rem;
+    color: var(--bs-primary);
+}
+
+/* =========================================================
+   DUMMY CHART
+========================================================= */
+
+.dummy-chart {
+    display: flex;
+    height: 240px;
+}
+
+.chart-y {
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    color: var(--bs-secondary-color);
+    font-size: .65rem;
+}
+
+.chart-area {
+    position: relative;
+    flex: 1;
+}
+
+.chart-grid {
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            transparent 0,
+            transparent 23%,
+            var(--bs-border-color) 24%,
+            transparent 25%
+        );
+}
+
+.chart-line {
+    position: absolute;
+    inset: 0 0 25px 0;
+    width: 100%;
+    height: calc(100% - 25px);
+    overflow: visible;
+}
+
+.chart-line polyline {
+    fill: none;
+    stroke: var(--bs-primary);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.chart-line circle {
+    fill: var(--bs-body-bg);
+    stroke: var(--bs-primary);
+    stroke-width: 3;
+}
+
+.chart-x {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--bs-secondary-color);
+    font-size: .65rem;
+}
+
+/* =========================================================
+   DIMENSIONS
+========================================================= */
+
+.national-dimensions {
+    margin-top: 2rem;
+}
+
+.dimension-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.dimension-heading h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.dimension-heading span {
+    color: var(--bs-secondary-color);
+    font-size: .8rem;
+}
+
+
+
+/* =========================================================
+   PROVINCE
+========================================================= */
+
+.province-map-card,
+.province-detail-card {
+    height: 100%;
+    padding: 2rem;
+    background: var(--bs-body-bg);
+    border:
+        1px solid
+        var(--bs-border-color);
+    border-radius: 18px;
+}
+
+/* Map Header */
+
+
+.map-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.map-header span {
+    color: var(--bs-secondary-color);
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+.map-header h3 {
+    margin: .3rem 0 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.map-header select {
+    width: auto;
+    min-width: 100px;
+}
+
+/* =========================================================
+   DUMMY MAP
+========================================================= */
+
+.dummy-indonesia-map {
+    min-height: 370px;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: var(--bs-tertiary-bg);
+}
+
+.map-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--bs-secondary-color);
+
+}
+
+.map-placeholder i {
+    margin-bottom: .75rem;
+    font-size: 4rem;
+    color: var(--bs-primary);
+}
+
+.map-placeholder span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.map-placeholder small {
+    margin-top: .35rem;
+    font-size: .75rem;
+}
+
+/* =========================================================
+   MAP LEGEND
+========================================================= */
+
+.map-legend {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.map-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    color: var(--bs-secondary-color);
+    font-size: .7rem;
+}
+
+.legend-dot {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.legend-dot.low {
+    background: #d9d9d9;
+}
+
+.legend-dot.medium {
+    background: #999;
+}
+
+.legend-dot.high {
+    background: #333;
+}
+
+/* =========================================================
+   PROVINCE DETAIL
+========================================================= */
+
+.province-detail-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.province-label {
+    color: var(--bs-secondary-color);
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+.province-detail-card h3 {
+    margin: .4rem 0 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.province-score {
+    display: flex;
+    align-items: baseline;
+    gap: .6rem;
+}
+
+.province-score strong {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.province-score span {
+    color: var(--bs-secondary-color);
+    font-size: .8rem;
+}
+
+.province-status {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--bs-success);
+    font-size: .8rem;
+}
+
+.province-comparison {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.province-comparison div {
+    padding: 1rem;
+    background: var(--bs-tertiary-bg);
+    border-radius: 10px;
+}
+
+.province-comparison span {
+    display: block;
+    margin-bottom: .3rem;
+    color: var(--bs-secondary-color);
+    font-size: .7rem;
+}
+
+.province-comparison strong {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.province-detail-card hr {
+    margin: 1.5rem 0;
+}
+
+.province-insight {
+    display: flex;
+    gap: .7rem;
+    margin-bottom: 1.5rem;
+}
+
+.province-insight i {
+	font-size: 20px;
+    color: var(--brand);
+}
+
+.province-insight p {
+    margin: 0;
+    color: var(--bs-secondary-color);
+    font-size: .8rem;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+    .ipk-national,
+    .ipk-province {
+        padding: 4rem 0;
+    }
+
+    .section-heading {
+        margin-bottom: 2rem;
+    }
+
+    .national-score-card {
+        min-height: 280px;
+    }
+
+    .national-chart-card {
+        padding: 1.25rem;
+    }
+
+    .dummy-chart {
+        height: 200px;
+    }
+
+    .dimension-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .3rem;
+    }
+
+
+    .province-map-card,
+    .province-detail-card {
+        padding: 1.25rem;
+    }
+
+    .map-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .map-header select {
+        width: 100%;
+    }
+
+    .dummy-indonesia-map {
+        min-height: 280px;
+    }
+
+    .province-score strong {
+        font-size: 3rem;
+    }
+}
+
+/* =========================================================
+   TAMBAHAN
+========================================================= */
+
+.ipk-summary {
+    height: 100%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--bs-body-bg);
+    border:
+        1px solid
+        var(--bs-border-color);
+    border-radius: 18px;
+}
+
+
+
+.ipk-summary-title {
+	
+    font-size: .85rem;
+
+    font-weight: 600;
+    /*color: var(--bs-body-color);*/
+	color: var(--bs-secondary-color);
+}
+
+.ipk-summary-year {
+    font-size: 14px;
+    color: var(--bs-secondary-color);
+    margin-top: 2px;
+}
+
+.ipk-summary-score {
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: var(--bs-body-color);
+    margin-top: 8px;
+}
+
+@media (max-width: 576px) {
+
+    .ipk-summary {
+        margin: 25px 10px 15px;
+    }
+
+    .ipk-summary-score {
+        font-size: 44px;
+    }
+
+}
+
+/* =========================================================
+   TAMBAHAN LAGI
+========================================================= */
+
+.ipk-summary-change {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bs-success);
+}
+
+.ipk-summary-change.down {
+    color: var(--bs-danger);
+}
+
+.ipk-summary-change.neutral {
+    color: var(--bs-secondary-color);
+}

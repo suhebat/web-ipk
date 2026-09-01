@@ -1,0 +1,25 @@
+/* =========================================================
+   TENTANG
+========================================================= */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid var(--bs-border-color);
+}
+
+th {
+	border: 1px solid var(--bs-border-color);
+}
+
+td {
+	text-align: center;
+	border: 1px solid var(--bs-border-color);
+    padding: 8px;
+}
+
+td p{
+	text-align: left;
+	margin: 0;
+}

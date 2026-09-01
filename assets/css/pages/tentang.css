@@ -1,0 +1,641 @@
+
+
+
+/* =========================================================
+   CONTENT CARD
+========================================================= */
+
+.content-card {
+    padding: 2.75rem;
+    background: var(--bs-body-bg);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .04);
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.about-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.about-logo img {
+    height: auto;
+}
+
+
+/* =========================================================
+   CONTENT TYPOGRAPHY
+========================================================= */
+
+.content-eyebrow {
+    display: inline-block;
+    margin-bottom: .75rem;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    color: var(--brand);
+}
+
+.content-title {
+    margin-bottom: 1.5rem;
+    font-size: clamp( 1.5rem, 2.5vw, 2rem );
+    font-weight: 600;
+}
+
+.content-card p {
+    color: var(--bs-secondary-color);
+    line-height: 1.8;
+}
+
+
+.content-card p:last-child {
+    margin-bottom: 0;
+}
+
+.content-text {
+    text-align: justify;
+}
+
+/* =========================================================
+   TUJUAN & MANFAAT
+========================================================= */
+
+.dimensi-block {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.dimensi-block:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.dimensi-icon {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--bs-tertiary-bg);
+    color: var(--brand);
+    font-size: 1.3rem;
+}
+
+.dimensi-block h3 {
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* =========================================================
+   SIDE NAVIGATION
+========================================================= */
+
+.side-navigation {
+    position: sticky;
+    top: 110px;
+    padding: 1.5rem;
+    background: var(--bs-tertiary-bg);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 14px;
+	margin-bottom: 20px;
+}
+
+.side-navigation-title {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    padding-bottom: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.side-navigation-title i {
+    color: var(--brand);
+}
+
+.side-nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .85rem .5rem;
+    color: var(--bs-body-color);
+    text-decoration: none;
+    font-size: .9rem;
+    border-bottom: 1px solid var(--bs-border-color);
+    transition: color .2s ease, padding-left .2s ease;
+}
+
+.side-nav-link:last-child {
+    border-bottom: 0;
+}
+
+
+.side-nav-link:hover {
+    color: var(--brand);
+    padding-left: .75rem;
+}
+
+.side-nav-link i {
+    flex-shrink: 0;
+    transition: transform .2s ease;
+}
+
+.side-nav-link:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 991.98px) {
+    .content-card {
+        padding: 1.75rem;
+    }
+
+    .about-logo {
+        min-height: 220px;
+    }
+
+    .side-navigation {
+        position: static;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    .content-card {
+        padding: 1.4rem;
+    }
+	
+	.about-logo {
+        height: 360px;
+		overflow-y: hidden;
+    }
+	
+	.about-logo img{
+        width: 90%;
+		
+    }
+
+    .purpose-block {
+        gap: .85rem;
+    }
+
+    .purpose-icon {
+        flex-basis: 42px;
+        width: 42px;
+        height: 42px;
+    }
+
+}
+
+/* Foto */
+.ipk-history-figure {
+    margin: 0;
+}
+
+.ipk-history-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.ipk-history-caption {
+    margin-top: 12px;
+    padding: 0 4px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--bs-secondary-color);
+    text-align: center;
+}
+
+
+
+/* =====================================================
+   CAKUPAN WILAYAH
+===================================================== */
+
+.ipk-scope {
+    position: relative;
+}
+
+
+/* ---------------------------------------------------------
+   CARD
+--------------------------------------------------------- */
+
+.ipk-scope-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    min-height: 190px;
+    padding: 2rem;
+    color: var(--bs-body-color);
+    text-decoration: none;
+    background-color: var(--bs-body-bg);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Subtle background glow */
+
+.ipk-scope-card::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: -70px;
+    border-radius: 50%;
+    background: var(--brand);
+    opacity: 0.045;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+
+/* ---------------------------------------------------------
+   ICON
+--------------------------------------------------------- */
+
+.ipk-scope-card-icon {
+    position: relative;
+    z-index: 1;
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(var(--brand-light-1), 0.1);
+    color: var(--brand);
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* ---------------------------------------------------------
+   CONTENT
+--------------------------------------------------------- */
+
+.ipk-scope-card-content {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+.ipk-scope-card-label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--brand);
+}
+
+.ipk-scope-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.35rem;
+    font-weight: 650;
+    color: var(--bs-body-color);
+}
+
+.ipk-scope-card p {
+    margin: 0;
+    max-width: 430px;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--bs-secondary-color);
+}
+
+
+/* ---------------------------------------------------------
+   ARROW
+--------------------------------------------------------- */
+
+.ipk-scope-card-arrow {
+    position: relative;
+    z-index: 1;
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--bs-tertiary-bg);
+    color: var(--bs-secondary-color);
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER
+--------------------------------------------------------- */
+
+.ipk-scope-card:hover {
+    color: var(--bs-body-color);
+    transform: translateY(-5px);
+    border-color: rgba( var(--brand), 0.35 );
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.ipk-scope-card:hover::before {
+    transform: scale(1.4);
+    opacity: 0.08;
+}
+
+.ipk-scope-card:hover .ipk-scope-card-icon {
+    background-color: var(--brand);
+    color: var(--bs-white);
+    transform: scale(1.05);
+}
+
+.ipk-scope-card:hover .ipk-scope-card-arrow {
+    background-color: var(--brand);
+    color: var(--bs-white);
+    transform: translateX(3px);
+}
+
+
+/* ---------------------------------------------------------
+   FOCUS ACCESSIBILITY
+--------------------------------------------------------- */
+
+.ipk-scope-card:focus-visible {
+    outline: 3px solid rgba( var(--bs-primary-rgb), 0.25 );
+    outline-offset: 4px;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 767.98px) {
+    .ipk-scope-intro {
+        text-align: left;
+    }
+
+    .ipk-scope-intro p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+
+    .ipk-scope-card {
+        min-height: 165px;
+        padding: 1.5rem;
+        gap: 1rem;
+        border-radius: 16px;
+    }
+
+    .ipk-scope-card-icon {
+        flex-basis: 50px;
+        width: 50px;
+        height: 50px;
+        border-radius: 14px;
+        font-size: 1.3rem;
+    }
+
+    .ipk-scope-card-label {
+        font-size: 0.65rem;
+    }
+
+    .ipk-scope-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .ipk-scope-card p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .ipk-scope-card-arrow {
+        flex-basis: 34px;
+        width: 34px;
+        height: 34px;
+        font-size: 0.85rem;
+    }
+}
+
+
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+.ipk-compact-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 1rem auto 0;
+    padding: 0;
+}
+
+
+/* ---------------------------------------------------------
+   VERTICAL LINE
+--------------------------------------------------------- */
+
+.ipk-compact-timeline::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 130px;
+    width: 1px;
+    background: var(--bs-border-color);
+}
+
+
+/* ---------------------------------------------------------
+   ITEM
+--------------------------------------------------------- */
+
+.ipk-compact-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 105px 26px 1fr;
+    column-gap: 12px;
+    align-items: start;
+    padding-bottom: 1.75rem;
+}
+
+
+.ipk-compact-item:last-child {
+    padding-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   YEAR
+--------------------------------------------------------- */
+
+.ipk-compact-year {
+    padding-top: 2px;
+    text-align: right;
+    color: var(--brand);
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+}
+
+
+/* ---------------------------------------------------------
+   DOT
+--------------------------------------------------------- */
+
+.ipk-compact-dot {
+    position: relative;
+    z-index: 2;
+    width: 11px;
+    height: 11px;
+    margin: 4px auto 0;
+    border-radius: 50%;
+    background: var(--brand);
+    box-shadow: 0 0 0 4px var(--bs-body-bg);
+}
+
+
+/* ---------------------------------------------------------
+   CONTENT
+--------------------------------------------------------- */
+
+.ipk-compact-content {
+    padding-left: 4px;
+}
+
+
+.ipk-compact-content h3 {
+    margin: 0 0 0.25rem;
+    color: var(--bs-body-color);
+    font-size: 1rem;
+    font-weight: 650;
+    line-height: 1.4;
+}
+
+
+.ipk-compact-content p {
+    max-width: 650px;
+    margin: 0;
+    color: var(--bs-secondary-color);
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+
+
+/* ---------------------------------------------------------
+   CURRENT
+--------------------------------------------------------- */
+
+.ipk-compact-current
+.ipk-compact-content h3 {
+    color: var(--brand);
+}
+
+.ipk-compact-current
+.ipk-compact-dot {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER
+--------------------------------------------------------- */
+
+.ipk-compact-item {
+    transition: transform 0.25s ease;
+}
+
+
+.ipk-compact-item:hover {
+    transform: translateX(3px);
+}
+
+
+.ipk-compact-item:hover
+.ipk-compact-dot {
+    transform: scale(1.2);
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 767.98px) {
+
+    .ipk-compact-timeline {
+        margin-top: 0.5rem;
+        padding-left: 18px;
+    }
+
+    .ipk-compact-timeline::before {
+        left: 95px;
+    }
+
+    .ipk-compact-item {
+        grid-template-columns: 60px 20px 1fr;
+        column-gap: 8px;
+        padding-bottom: 1.5rem;
+    }
+
+    .ipk-compact-year {
+        font-size: 0.68rem;
+        line-height: 1.35;
+    }
+
+    .ipk-compact-dot {
+        width: 9px;
+        height: 9px;
+        margin-top: 5px;
+        box-shadow: 0 0 0 3px var(--bs-body-bg);
+    }
+
+    .ipk-compact-content {
+        padding-left: 2px;
+    }
+
+    .ipk-compact-content h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .ipk-compact-content p {
+        font-size: 0.82rem;
+        line-height: 1.6;
+    }
+
+    .ipk-compact-current
+    .ipk-compact-dot {
+        width: 11px;
+        height: 11px;
+    }
+
+}
+
