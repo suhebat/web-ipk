@@ -1,0 +1,325 @@
+/* =========================================================
+   NAVBAR.CSS
+========================================================= */
+
+.navbar {
+	padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background: var(--bs-body-bg);
+	/*background-color: color-mix(
+        in srgb,
+        var(--bs-body-bg) 92%,
+        var(--bs-emphasis-color) 8%
+    );*/
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding-left: 0.9rem !important;
+    padding-right: 0.9rem !important;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--brand);
+}
+
+
+/* ---------------------------------------------------------
+   NAVBAR LOGO
+--------------------------------------------------------- */
+
+.navbar-logo {
+    width: 240px;
+    height: 50px;
+    display: block;
+
+    background-image: var(--logo-ipk);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* ---------------------------------------------------------
+   LIGHT MODE
+--------------------------------------------------------- */
+
+.logo-dark {
+    display: none !important;
+}
+
+.logo-light {
+    display: block !important;
+}
+
+
+/* ---------------------------------------------------------
+   DARK MODE
+--------------------------------------------------------- */
+
+[data-bs-theme="dark"] .logo-light {
+    display: none !important;
+}
+
+[data-bs-theme="dark"] .logo-dark {
+    display: block !important;
+}
+
+
+/* ---------------------------------------------------------
+   DROPWOWN
+--------------------------------------------------------- */
+
+.navbar .dropdown-menu {
+    margin-top: 0.6rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--bs-border-color);
+    background-color: var(--bs-body-bg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------------------------------------------------------
+   DESKTOP DROPWOWN ANIMATION
+--------------------------------------------------------- */
+
+@media (min-width: 992px) {
+
+    .navbar .dropdown {
+        position: relative;
+    }
+
+    .navbar .dropdown-menu {
+        display: block;
+        min-width: 230px;
+        margin-top: 0;
+        padding: .5rem;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        pointer-events: none;
+        border: 1px solid var(--bs-border-color);
+        border-radius: 10px;
+        transition:
+			opacity .25s ease,
+			transform .25s ease,
+			visibility .25s ease;
+    }
+
+    /* Dropdown terbuka */
+    .navbar .dropdown-menu.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+	
+/* ---------------------------------------------------------
+   DROPDOWN ITEM
+--------------------------------------------------------- */
+
+.navbar .dropdown-menu .dropdown-item {
+        padding: .65rem .85rem;
+        border-radius: 7px;
+        font-size: .9rem;
+        transition:
+			background-color
+			.2s ease, color
+			.2s ease, padding-left
+			.2s ease;
+    }
+
+    /* Hover item */
+    .navbar .dropdown-menu .dropdown-item:hover,
+    .navbar .dropdown-menu .dropdown-item:focus {
+        background-color: var(--bs-tertiary-bg);
+        color: var(--brand);
+        padding-left: 1rem;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   DROPDOWN ARROW ANIMATION
+--------------------------------------------------------- */
+
+.navbar .dropdown-toggle::after {
+    transition: transform 0.25s ease;
+}
+
+/* Saat dropdown terbuka */
+.navbar .dropdown-toggle.show::after {
+    transform: rotate(180deg);
+}
+
+
+/* ---------------------------------------------------------
+   THEME TOGGLE
+--------------------------------------------------------- */
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.theme-toggle i {
+    font-size: 0.9rem;
+    color: var(--brand);
+    transition: color 0.2s ease;
+}
+
+.theme-toggle .form-check {
+    margin: 0;
+}
+
+.theme-toggle .form-check-input:checked {
+    width: 2.3em;
+    height: 1.2em;
+    cursor: pointer;
+	border: var(--brand);
+	background-color: var(--brand);
+}
+
+.form-switch .form-check-input:focus{
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0,0,0,0.25)'/></svg>");
+	border: var(--brand);
+	box-shadow: 0 0 0 0.25rem rgba(184, 134, 11, 0.25);
+}
+
+
+/* ---------------------------------------------------------
+   LOGIN
+--------------------------------------------------------- */
+
+.login-btn {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.45rem 1.15rem;
+    border-radius: 7px;
+    white-space: nowrap;
+	transition-duration: 0.4s;
+	background-color: var(--brand);
+	border: none;
+}
+
+.login-btn:hover {
+	background-color: var(--brand-light-1);
+	transform: translateY(-2px);
+}
+
+.login-btn:active:focus {
+	background-color: var(--brand);
+	transform: translateY(1px);
+}
+
+
+/* ---------------------------------------------------------
+   NAVBAR ACTIONS
+--------------------------------------------------------- */
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE NAVIGATION
+--------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+
+    /* Menu utama */
+	
+    .navbar-nav {
+        gap: 0;
+    }
+
+    .navbar-nav > .nav-item {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /*
+     * Jarak antar MENU UTAMA
+     *
+     * Hanya nav-item level pertama.
+     */
+
+    .navbar-nav > .nav-item + .nav-item {
+        margin-top: .45rem;
+    }
+
+    /* Link menu utama */
+
+    .navbar-nav > .nav-item > .nav-link {
+        padding-top: .65rem;
+        padding-bottom: .65rem;
+    }
+
+    /* DROPDOWN */
+
+    .navbar .dropdown-menu {
+        position: static !important;
+        display: block;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0 0 0 1rem;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        background: transparent;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-5px);
+        pointer-events: none;
+        transition:
+			max-height .3s ease,
+			opacity .2s ease,
+			transform .2s ease,
+			visibility .2s ease;
+    }
+
+    /* Dropdown terbuka */
+    .navbar .dropdown-menu.show {
+        max-height: 400px;
+        padding-top: .15rem;
+        padding-bottom: .25rem;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+
+    /* Submenu item */
+    .navbar .dropdown-menu .dropdown-item {
+        padding: .45rem .75rem;
+        margin: 0;
+        font-size: .85rem;
+        border-radius: 6px;
+        background: transparent;
+    }
+
+
+    .navbar .dropdown-menu .dropdown-item:hover,
+    .navbar .dropdown-menu .dropdown-item:focus {
+
+        background-color: var(--bs-tertiary-bg);
+        color: var(--brand);
+    }
+
+}

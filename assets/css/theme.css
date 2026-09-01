@@ -1,0 +1,44 @@
+/* =========================================================
+   BRAND ASSETS
+========================================================= */
+
+:root {
+	--logo-ipk: url("../img/branding/logo-light.png");
+    --logo-ipk-footer: url("../img/branding/logo-ipk-light.png");
+
+    --logo-kemenbud: url("../img/branding/kemenbud-light.png");
+    --logo-bappenas: url("../img/branding/bappenas-light.png");
+    --logo-bps: url("../img/branding/bps-light.png");
+}
+
+
+[data-bs-theme="dark"] {
+	--logo-ipk: url("../img/branding/logo-dark.png");
+    --logo-ipk-footer: url("../img/branding/logo-ipk-dark.png");
+
+    --logo-kemenbud: url("../img/branding/kemenbud-dark.png");
+    --logo-bappenas: url("../img/branding/bappenas-dark.png");
+    --logo-bps: url("../img/branding/bps-dark.png");
+}
+
+/* =========================================================
+   COLOR VARIABLES
+========================================================= */
+:root {
+	--brand: #B8860B;
+	--brand-rgb: 184, 134, 11;
+	--brand-light-1: #CAA448;
+	
+	--brand-2: #D4B356;
+	--brand-3: #BD953E;
+	--brand-4: #900500;
+	
+	--brand-5: #6C0200;
+	--brand-5-rgb: 108, 2, 0;
+	
+	--brand-6: #350200;
+	--brand-6-rgb: 53, 2, 0;
+	
+	--shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
