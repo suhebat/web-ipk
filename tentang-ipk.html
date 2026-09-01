@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+	<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Indeks Pembangunan Kebudayaan (IPK) | Kementerian Kebudayaan Republik Indonesia</title>
+	<meta name="description" content="Situs resmi Indeks Pembangunan Kebudayaan (IPK) Kementerian Kebudayaan Republik Indonesia. Menyajikan data, laporan, dan analisis pembangunan kebudayaan nasional serta daerah secara transparan dan interaktif.">
+	<meta name="keywords" content="Indeks Pembangunan Kebudayaan, IPK, kebudayaan Indonesia, data kebudayaan, indikator kebudayaan, pembangunan budaya, Kementerian Kebudayaan, statistik budaya, laporan IPK, pemajuan kebudayaan">
+
+	<!-- Favicons -->
+	<link href="favicon.ico" rel="icon">
+	<link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+	<!-- Vendor CSS Files
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+	
+	<!-- CDN Vendor CSS Files -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+	<!-- Custom CSS Files -->
+	<link rel="stylesheet" href="assets/css/ipk-nas-prov.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/navbar.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
+	<link rel="stylesheet" href="assets/css/components.css">
+	<link rel="stylesheet" href="assets/css/theme.css">
+	<link rel="stylesheet" href="assets/css/pages/tentang.css">
+
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+    <div class="container">
+        
+		<!-- BRAND -->
+		<a href="#" class="navbar-brand navbar-logo" aria-label="Indeks Pembangunan Kebudayaan">
+		</a>
+
+        <!-- MOBILE TOGGLE -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+
+            <!-- =================================================
+                 MENU
+            ================================================= -->
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                
+				<!-- BERANDA -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">BERANDA</a>
+                </li>
+
+                <!-- TENTANG -->
+				<li class="nav-item dropdown">
+					<a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">TENTANG</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a class="dropdown-item" href="#">Tentang IPK</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="dasar-hukum.html">Dasar Hukum &amp; Kebijakan</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#metodologi">Metodologi &amp; Indikator</a>
+						</li>
+					</ul>
+				</li>
+
+                <!-- DATA & HASIL -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DATA &amp; HASIL</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Hasil Nasional</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Per Provinsi / Kab/Kota</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Peta Interaktif</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Trend &amp; Analisis</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- PUBLIKASI -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PUBLIKASI</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="publikasi.html">Koleksi Buku Digital</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item disabled" href="#">Data &amp; Statistik</a>
+                        </li>
+						<li>
+                            <a class="dropdown-item disabled" href="#">Infografis</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item disabled" href="#">Dokumen Teknis</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- LAYANAN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">LAYANAN</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="permohonan-data.html">Permohonan Data</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="kontak.html">Kontak</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- =================================================
+                 RIGHT SIDE
+            ================================================= -->
+
+            <div class="navbar-actions">
+
+                <!-- THEME SWITCH -->
+                <div class="theme-toggle">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" aria-label="Dark mode">
+                    </div>
+					<i class="bi bi-sun-fill" id="themeIcon"></i>
+                </div>
+
+                <!-- LOGIN
+                <a href="#" class="btn btn-primary login-btn">Login</a> -->
+
+            </div>
+        
+		</div>
+    
+	</div>
+	
+</nav>
+
+
+<!-- =====================================================
+     PAGE HEADER
+===================================================== -->
+
+<section class="page-header">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+
+            <!-- Page Title -->
+            <div>
+                <span class="page-eyebrow">
+                    Indeks Pembangunan Kebudayaan
+                </span>
+                <h1 class="page-title">
+                    Mengenal Lebih Dekat IPK
+                </h1>
+            </div>
+
+        </div>
+
+    </div>
+	<div class="container">
+		<!-- Breadcrumb -->
+		<div>
+            <nav aria-label="breadcrumb" class="mt-3 mt-md-0">
+                <ol class="breadcrumb justify-content-end">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Beranda</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Tentang IPK
+                    </li>
+                </ol>
+            </nav>
+		</div>
+	</div>
+	
+
+</section>
+
+
+<!-- =====================================================
+     CONTENT 1 — LATAR BELAKANG
+===================================================== -->
+
+<section class="about-content section-spacing">
+    <div class="container">
+        <div class="content-card">
+            <div class="row align-items-center g-5">
+
+                <!-- 1/3 LOGO -->
+
+                <div class="col-lg-4">
+                    <div class="about-logo">
+                        <img src="assets/img/content/ipk-on-thewall.png" alt="Logo Indeks Pembangunan Kebudayaan" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- 2/3 NARASI -->
+
+                <div class="col-lg-8">
+                    <span class="content-eyebrow">
+                        Tentang IPK
+                    </span>
+                    <h2 class="content-title">Mengenal Indeks Pembangunan Kebudayaan</h2>
+					<div class="content-text">
+                    <p>
+                        <strong>Indeks Pembangunan Kebudayaan (IPK)</strong> merupakan instrumen untuk menggambarkan capaian pembangunan kebudayaan di Indonesia secara terukur. IPK menyajikan informasi mengenai kondisi pembangunan kebudayaan melalui sejumlah dimensi yang mencerminkan kehidupan kebudayaan masyarakat..
+					</p>
+					<p>
+						Melalui IPK, perkembangan pembangunan kebudayaan dapat dilihat secara lebih komprehensif, baik pada tingkat nasional maupun daerah. Data dan informasi yang dihasilkan dapat menjadi salah satu bahan dalam memahami kondisi kebudayaan, mengidentifikasi tantangan, serta mendukung perumusan kebijakan pembangunan kebudayaan yang lebih tepat sasaran.
+					</p>
+					</div>
+                </div>
+            </div>
+		</div>
+	</div>
+	</section>
+	<section>
+			
+	<div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8" style="margin-bottom: 20px">
+					<div class="content-card h-100 tentang-content">
+						
+						<!-- 02 — Apa Itu IPK? -->
+						
+						<h2 class="content-title">
+							Pengertian IPK
+						</h2>
+						<div class="content-text">
+						<p>
+							Pembangunan kebudayaan merupakan bagian penting dari pembangunan nasional. Kebudayaan tidak hanya berkaitan dengan seni dan tradisi, tetapi juga mencakup pengetahuan, pendidikan, ekspresi, warisan budaya, literasi, kehidupan sosial, serta berbagai aspek lain yang membentuk kehidupan masyarakat.
+						</p>
+						<p>
+							Untuk memahami perkembangan pembangunan kebudayaan secara lebih objektif, diperlukan ukuran yang dapat menggambarkan kondisi tersebut secara terstruktur. Indeks Pembangunan Kebudayaan hadir sebagai salah satu instrumen untuk mengukur dan memantau perkembangan pembangunan kebudayaan melalui indikator-indikator yang dapat dibandingkan dari waktu ke waktu dan antarwilayah.
+						</p>
+						<p>
+							Nilai IPK memberikan gambaran mengenai capaian pembangunan kebudayaan berdasarkan berbagai aspek kehidupan kebudayaan masyarakat. Dengan demikian, IPK tidak dimaksudkan untuk menggambarkan seluruh kompleksitas kebudayaan secara keseluruhan, melainkan menjadi alat ukur yang membantu melihat perkembangan aspek-aspek kebudayaan yang dapat diukur melalui data.
+						</p>
+						</div>
+						
+						<hr class="divider">
+						
+						<!-- 03 — Mengapa IPK Hadir? -->
+						
+						<h2 class="content-title">
+							Latar Belakang
+						</h2>
+						<div class="content-text">
+						<p>
+							Kebudayaan merupakan bagian penting dari pembangunan nasional. Namun, untuk memahami perkembangan pembangunan kebudayaan secara lebih objektif, diperlukan instrumen yang mampu menggambarkan capaian pembangunan tersebut melalui data yang terukur.
+						</p>
+						<p>
+							Kehadiran Indeks Pembangunan Kebudayaan (IPK) menjadi langkah untuk menghadirkan ukuran yang dapat membantu pemerintah memahami kondisi dan perkembangan pembangunan kebudayaan di Indonesia. IPK dirancang untuk memotret capaian pembangunan kebudayaan, bukan untuk memberikan penilaian terhadap tinggi atau rendahnya nilai budaya suatu wilayah.
+						</p>
+						<p>
+							Dengan pendekatan tersebut, IPK menjadi salah satu instrumen yang membantu melihat pembangunan kebudayaan secara lebih sistematis, sekaligus menyediakan informasi yang dapat digunakan untuk pemantauan, evaluasi, dan perumusan kebijakan.
+						</p>
+						</div>
+						
+						<hr class="divider">
+						
+						<!-- 04 — Perjalanan Lahirnya IPK -->
+						
+						<h2 class="content-title">
+							Sejarah IPK
+						</h2>
+
+						<!-- Featured Image -->
+						<div class="row justify-content-center">
+							<div class="col-lg-11 col-xl-10">
+
+								<figure class="ipk-history-figure mb-4">
+
+									<img
+										src="assets/img/content/launching-ipk.jpeg"
+										alt="Peluncuran Indeks Pembangunan Kebudayaan pada Pekan Kebudayaan Nasional 2019"
+										class="img-fluid w-100 ipk-history-image"
+										loading="lazy"
+									>
+
+									<figcaption class="ipk-history-caption">
+										Peluncuran Indeks Pembangunan Kebudayaan (IPK)
+										pada rangkaian Pekan Kebudayaan Nasional 2019.
+										Momen ini menjadi salah satu tonggak penting dalam
+										upaya menghadirkan ukuran pembangunan kebudayaan
+										yang berbasis data.<br><em>(sumber foto: www.kemenkopmk.go.id)</em>
+									</figcaption>
+
+								</figure>
+
+							</div>
+						</div>
+						
+				
+						<!-- =====================================================
+							 SEJARAH IPK - COMPACT TIMELINE
+						===================================================== -->
+						<div class="ipk-history py-5" id="sejarah-ipk">
+							<div class="container">
+
+								<!-- Heading
+								<div class="row justify-content-center text-center mb-4">
+									<div class="col-lg-8">
+										<span class="section-eyebrow">
+											SEJARAH IPK
+										</span>
+										<h2 class="section-title mt-2 mb-3">
+											Dari Gagasan Menjadi Instrumen
+											<br class="d-none d-md-block">
+											Pembangunan Kebudayaan
+										</h2>
+									</div>
+								</div> -->
+
+								<!-- Timeline -->
+								<div class="ipk-compact-timeline">
+
+									<!-- 2018 -->
+									<div class="ipk-compact-item">
+										<div class="ipk-compact-year">2018</div>
+										<div class="ipk-compact-dot"></div>
+										<div class="ipk-compact-content">
+											<h3>Pengukuran Pertama</h3>
+											<p>
+												Menjadi langkah awal dalam menghadirkan ukuran
+												terukur untuk melihat capaian pembangunan
+												kebudayaan Indonesia.
+											</p>
+										</div>
+									</div>
+
+									<!-- 2019 -->
+									<div class="ipk-compact-item">
+										<div class="ipk-compact-year">2019</div>
+										<div class="ipk-compact-dot"></div>
+										<div class="ipk-compact-content">
+											<h3>IPK Diluncurkan</h3>
+											<p>
+												Menandai hadirnya IPK sebagai instrumen untuk
+												mengukur dan memantau capaian pembangunan
+												kebudayaan Indonesia.
+											</p>
+										</div>
+									</div>
+
+									<!-- 2019 -->
+									<div class="ipk-compact-item">
+										<div class="ipk-compact-year">2019</div>
+										<div class="ipk-compact-dot"></div>
+										<div class="ipk-compact-content">
+											<h3>Kolaborasi Lintas Institusi</h3>
+											<p>
+												Memperkuat pengembangan IPK melalui koordinasi
+												dan sinergi lintas lembaga dalam pembangunan
+												kebudayaan Indonesia.
+											</p>
+										</div>
+									</div>
+
+									<!-- 2020–2022 -->
+									<div class="ipk-compact-item">
+										<div class="ipk-compact-year">2020–2022</div>
+										<div class="ipk-compact-dot"></div>
+										<div class="ipk-compact-content">
+											<h3>Memperkuat Peran</h3>
+											<p>
+												Mendorong pemanfaatan IPK dalam pemantauan dan
+												evaluasi pembangunan kebudayaan secara lebih
+												terstruktur dan berkelanjutan.
+											</p>
+										</div>
+									</div>
+
+									<!-- 2023 -->
+									<div class="ipk-compact-item">
+										<div class="ipk-compact-year">2023</div>
+										<div class="ipk-compact-dot"></div>
+										<div class="ipk-compact-content">
+											<h3>Memperluas Pemanfaatan</h3>
+											<p>
+												Memperluas pemanfaatan data IPK untuk memahami
+												perkembangan pembangunan kebudayaan di berbagai
+												wilayah Indonesia.
+											</p>
+										</div>
+									</div>
+
+									<!-- 2024–Sekarang -->
+									<div class="ipk-compact-item ipk-compact-current">
+										<div class="ipk-compact-year">2024–<br>sekarang</div>
+										<div class="ipk-compact-dot"></div>
+										<div class="ipk-compact-content">
+											<h3>Ekosistem Data Kebudayaan</h3>
+											<p>
+												Mengembangkan IPK sebagai bagian dari ekosistem
+												data untuk mendukung pemahaman dan kebijakan
+												pembangunan kebudayaan.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Section: Timeline -->
+						
+						
+						<hr class="divider">
+						
+						<!-- 05 — Mengapa IPK Penting? -->
+						
+						<h2 class="content-title">
+							Peran Strategis
+						</h2>
+						<div class="content-text">
+						<p>
+							IPK membantu menyediakan gambaran berbasis data mengenai perkembangan pembangunan kebudayaan. Informasi yang dihasilkan dapat digunakan untuk melihat capaian, memahami perbedaan antarwilayah, memantau perubahan dari waktu ke waktu, serta mengidentifikasi aspek pembangunan kebudayaan yang perlu mendapatkan perhatian.
+						</p>
+						<p>
+							Dengan tersedianya ukuran yang terstruktur, IPK dapat menjadi salah satu sumber informasi dalam proses perencanaan, pemantauan, dan evaluasi pembangunan kebudayaan.
+						</p>
+						</div>
+						
+						<hr class="divider">
+						
+						<!-- 06 — Apa yang Diukur? -->
+						
+						<h2 class="content-title">
+							Dimensi Pengukuran
+						</h2>
+						<div class="content-text">
+						<p>
+							IPK melihat pembangunan kebudayaan melalui beberapa aspek kehidupan masyarakat. Pendekatan multidimensi ini digunakan karena pembangunan kebudayaan memiliki cakupan yang luas dan tidak dapat direpresentasikan hanya melalui satu ukuran.
+							<br>Dalam pengembangannya, IPK mencakup tujuh dimensi pembangunan kebudayaan:
+						</p>
+						
+						<!-- Ekonomi Budaya -->
+
+						<div class="dimensi-block">
+							<div class="dimensi-icon">
+								<i class="bi bi-bar-chart-line"></i>
+							</div>
+							<div>
+								<h3>Ekonomi Budaya</h3>
+								<p>
+									Menggambarkan keterkaitan kebudayaan dengan aktivitas ekonomi, termasuk kontribusi dan pemanfaatan potensi budaya dalam kehidupan masyarakat.
+								</p>
+							</div>
+						</div>
+
+						<!-- Pendidikan -->
+
+						<div class="dimensi-block">
+							<div class="dimensi-icon">
+								<i class="bi bi-mortarboard"></i>
+							</div>
+							<div>
+								<h3>Pendidikan</h3>
+								<p>
+									Menggambarkan keterkaitan pendidikan dengan pembangunan kebudayaan, termasuk akses, partisipasi, dan peran pendidikan dalam pengembangan pengetahuan dan kebudayaan.
+								</p>
+							</div>
+						</div>
+						
+						<!-- Ketahanan Sosial Budaya -->
+
+						<div class="dimensi-block">
+							<div class="dimensi-icon">
+								<i class="bi bi-people"></i>
+							</div>
+							<div>
+								<h3>Ketahanan Sosial Budaya</h3>
+								<p>
+									Menggambarkan kemampuan masyarakat dalam mempertahankan nilai, hubungan sosial, keberagaman, serta kehidupan budaya di tengah perubahan.
+								</p>
+							</div>
+						</div>
+						
+						<!-- Warisan Budaya -->
+
+						<div class="dimensi-block">
+							<div class="dimensi-icon">
+								<i class="bi bi-bank"></i>
+							</div>
+							<div>
+								<h3>Warisan Budaya</h3>
+								<p>
+									Menggambarkan kondisi dan keberlanjutan warisan budaya, termasuk upaya pelindungan, pemanfaatan, pengembangan, dan pewarisannya.
+								</p>
+							</div>
+						</div>
+						
+						<!-- Ekspresi Budaya -->
+
+						<div class="dimensi-block">
+							<div class="dimensi-icon">
+								<i class="bi bi-music-note-beamed"></i>
+							</div>
+							<div>
+								<h3>Ekspresi Budaya</h3>
+								<p>
+									Menggambarkan kesempatan dan partisipasi masyarakat dalam mengekspresikan, mengembangkan, dan menikmati berbagai bentuk ekspresi budaya.
+								</p>
+							</div>
+						</div>
+						
+						<!-- Budaya Literasi -->
+
+						<div class="dimensi-block">
+							<div class="dimensi-icon">
+								<i class="bi bi-book"></i>
+							</div>
+							<div>
+								<h3>Budaya Literasi</h3>
+								<p>
+									Menggambarkan kemampuan dan kebiasaan masyarakat dalam mengakses, memahami, memanfaatkan, dan mengembangkan pengetahuan melalui aktivitas literasi.
+								</p>
+							</div>
+						</div>
+
+						<!-- Gender -->
+
+						<div class="dimensi-block">
+							<div class="dimensi-icon">
+								<i class="bi bi-gender-ambiguous"></i>
+							</div>
+							<div>
+								<h3>Gender</h3>
+								<p>
+									Menggambarkan keterlibatan dan kesetaraan perempuan dan laki-laki dalam berbagai aspek kehidupan kebudayaan.
+								</p>
+							</div>
+						</div>
+						</div>
+						
+						<hr class="divider">
+						
+						<!-- 07 — Bagaimana IPK Dimanfaatkan? -->
+						
+						<h2 class="content-title">
+							Pemanfaatan Data
+						</h2>
+						<div class="content-text">
+						<p>
+							IPK dapat dimanfaatkan sebagai salah satu sumber informasi dalam memahami kondisi dan perkembangan pembangunan kebudayaan. Data yang dihasilkan dapat mendukung proses pemantauan dan evaluasi, membantu mengidentifikasi tantangan pembangunan kebudayaan, serta menjadi bahan pertimbangan dalam penyusunan kebijakan dan program.
+						</p>
+						<p>
+							Pemanfaatan IPK tidak berhenti pada nilai indeks. Analisis terhadap dimensi dan indikator pembentuknya dapat memberikan gambaran yang lebih mendalam mengenai aspek pembangunan kebudayaan yang perlu dipertahankan, diperkuat, maupun dikembangkan.
+						</p>
+						</div>
+						
+						<hr class="divider">
+						
+						<!-- 08 — IPK Nasional dan Daerah -->
+						
+						<h2 class="content-title">
+							Cakupan Wilayah
+						</h2>
+						<div class="content-text">
+						<p>
+							Indeks Pembangunan Kebudayaan (IPK) menyajikan gambaran capaian pembangunan kebudayaan pada berbagai tingkat wilayah, mulai dari nasional hingga provinsi. Penyajian ini memungkinkan pengguna untuk melihat kondisi pembangunan kebudayaan secara menyeluruh sekaligus memahami karakteristik dan perkembangan setiap daerah.
+						</p>
+						<p>
+							Melalui hasil pengukuran IPK, pengguna dapat membandingkan capaian antarwilayah, mengamati perkembangan dari waktu ke waktu, serta memperoleh informasi yang mendukung perencanaan, evaluasi, dan pengambilan kebijakan di bidang kebudayaan.
+						</p>
+						</div>
+						&nbsp;
+						
+						<!-- =====================================================
+							 CAKUPAN WILAYAH
+						===================================================== -->
+
+						<!-- Result Cards -->
+						<div class="row g-4 justify-content-center">
+
+							<!-- Hasil Nasional -->
+							<div class="col">
+
+								<a href="#"
+								   class="ipk-scope-card">
+
+									<div class="ipk-scope-card-icon">
+										<i class="bi bi-bar-chart-line"></i>
+									</div>
+
+									<div class="ipk-scope-card-content">
+
+										<span class="ipk-scope-card-label">
+											DATA NASIONAL
+										</span>
+
+										<h3>
+											Hasil Nasional
+										</h3>
+
+										<p>
+											Lihat capaian Indeks Pembangunan Kebudayaan
+											Indonesia dan perkembangannya dari waktu ke waktu.
+										</p>
+
+									</div>
+
+									<div class="ipk-scope-card-arrow">
+										<i class="bi bi-arrow-right"></i>
+									</div>
+
+								</a>
+
+							</div>
+
+
+							<!-- Hasil Provinsi -->
+							<div class="col">
+								<a href="#"
+								   class="ipk-scope-card">
+									<div class="ipk-scope-card-icon">
+										<i class="bi bi-map"></i>
+									</div>
+									<div class="ipk-scope-card-content">
+										<span class="ipk-scope-card-label">
+											DATA PROVINSI
+										</span>
+										<h3>
+											Hasil Provinsi
+										</h3>
+										<p>
+											Jelajahi capaian IPK setiap provinsi dan
+											bandingkan perkembangan pembangunan kebudayaan
+											antarwilayah.
+										</p>
+									</div>
+									<div class="ipk-scope-card-arrow">
+										<i class="bi bi-arrow-right"></i>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+				<!-- 1/3 SIDE NAVIGATION -->
+
+				<div class="col-lg-4">
+
+					<aside class="side-navigation">
+						<div class="side-navigation-title">
+							<i class="bi bi-info-circle"></i>
+							<span>
+								Informasi Lanjutan
+							</span>
+						</div>
+
+						<nav>
+							<a href="dasar-hukum.html" class="side-nav-link">
+								<span>
+									Dasar Hukum &amp; Kebijakan
+								</span>
+								<i class="bi bi-arrow-right"></i>
+							</a>
+							<a href="#" class="side-nav-link">
+								<span>
+									Metodologi &amp; Indikator
+								</span>
+								<i class="bi bi-arrow-right"></i>
+							</a>
+						</nav>
+					</aside>
+				</div>
+        	</div>
+	</div>
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <!-- ================= FOOTER TOP ================= -->
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- ==============================
+                     COLUMN 1
+                =============================== -->
+
+                <div class="col-lg-4 col-md-6">
+    				<div class="footer-brand">
+						<a href="#" class="footer-logo" aria-label="Indeks Pembangunan Kebudayaan"></a>
+
+						<p class="footer-description">
+							Portal Data Resmi Indeks Pembangunan Kebudayaan Indonesia.
+						</p>
+					</div>
+				</div>
+
+                <!-- ==============================
+                     COLUMN 2
+                =============================== -->
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Hubungi Kami</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+							<a href="https://maps.app.goo.gl/CW4qmuzqrsUnaacg7" class="footer-contact-link" target="_blank" rel="noopener noreferrer">
+								<span>PUSDATIN KEMENBUD<br>Grha Kebudayaan, Jl. RE Martadinata KM. 15.5, Cipayung, Kec. Ciputat, Kota Tangerang Selatan, Banten 15411</span>
+							</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+622130620100">(021) 3062 0100</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:pusdatin@kemenbud.go.id">pusdatin@kemenbud.go.id</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ==============================
+                     COLUMN 3
+                =============================== -->
+
+                <div class="col-lg-5 col-md-12">
+                    <h5 class="footer-title">Sinergi Data Nasional</h5>
+                    <div class="footer-logos">
+
+						<a href="https://kemenbud.go.id/"
+						   target="_blank"
+						   rel="noopener noreferrer"
+						   class="footer-logo-item footer-logo-kemenbud"
+						   aria-label="Kementerian Kebudayaan">
+						</a>
+
+						<a href="https://www.bappenas.go.id/id"
+						   target="_blank"
+						   rel="noopener noreferrer"
+						   class="footer-logo-item footer-logo-bappenas"
+						   aria-label="Bappenas">
+						</a>
+
+						<a href="https://www.bps.go.id/id"
+						   target="_blank"
+						   rel="noopener noreferrer"
+						   class="footer-logo-item footer-logo-bps"
+						   aria-label="Badan Pusat Statistik">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- ================= FOOTER BOTTOM ================= -->
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="copyright">Hak Cipta © 2026 Kementerian Kebudayaan.</p>
+        </div>
+    </div>
+
+</footer>
+	
+<!-- ==================================================
+     Back to Top Button
+================================================== -->
+	
+<button type="button" id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+    <i class="bi bi-arrow-up-short"></i>
+</button>
+
+
+<!-- ==================================================
+     JS
+================================================== -->
+	
+<!-- Bootstrap JS
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+	
+<!-- CDN Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/pages/tentang.js"></script>
+	
+</body>
+
+</html>
