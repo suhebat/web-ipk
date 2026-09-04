@@ -1,0 +1,248 @@
+/* Warna Legenda & Peta */
+:root {
+    --c-low: #FEE2E2;
+	--c-mid-low: #FED7AA;
+	--c-mid: #FEF3C7;
+	--c-mid-high: #BBF7D0;
+	--c-high: #86EFAC;
+}
+[data-bs-theme="dark"] {
+    --c-low: #7F1D1D;
+	--c-mid-low: #9A3412;
+	--c-mid: #854D0E;
+	--c-mid-high: #166534;
+	--c-high: #15803D;
+}
+
+.legend-box {
+	width: 14px;
+	height: 14px;
+	border-radius: 3px;
+	margin-right: 8px;
+	display: inline-block;
+}
+
+.c-1 {
+	background: var(--c-low);
+}
+
+.c-2 {
+	background: var(--c-mid-low);
+}
+.c-3 {
+	background: var(--c-mid);
+}
+
+.c-4 {
+	background: var(--c-mid-high);
+}
+
+.c-5 {
+	background: var(--c-high);
+}
+
+/* Kontrol Peta */
+.map-wrapper {
+	position: relative;
+	border: 1px solid var(--bs-border-color);
+	border-radius: 0.75rem;
+	overflow: hidden;
+}
+
+.map-controls {
+	position: absolute;
+	top: 1rem; left: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	z-index: 10;
+}
+
+.map-tooltip { 
+    position: absolute;
+	display: none;
+	background: rgba(0,0,0,0.85);
+	color: #fff; 
+    padding: 0.5rem 0.8rem;
+	border-radius: 0.5rem;
+	font-size: 0.8rem;
+	pointer-events: none;
+	z-index: 100;
+}
+
+.indonesia-map svg {
+	transform-origin: center;
+	transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	cursor: crosshair;
+}
+
+.province-path {
+	transition: filter 0.2s;
+}
+
+.province-path:hover { filter: brightness(1.2); }
+
+body {
+	background: var(--bs-body-bg);
+	color: var(--bs-body-color);
+}
+
+.dashboard-card {
+	border: 1px solid var(--bs-border-color);
+	border-radius: 1rem;
+	background: var(--bs-body-bg);
+	padding: 1.5rem;
+}
+
+.score-card {
+	display: flex; flex-direction: column;
+	justify-content: center;
+}
+
+.score-year {
+	font-size: .85rem;
+	color: var(--bs-secondary-color);
+}
+
+.chart-trend {
+	height: 280px;
+}
+
+.radar-wrap {
+	height: 500px;
+}
+
+.dimension-card {
+	height: 100%;
+	border: 1px solid var(--bs-border-color);
+	border-radius: .9rem;
+	background: var(--bs-tertiary-bg);
+	padding: 1.15rem;
+}
+
+.dimension-value {
+	font-size: 1.65rem; font-weight: 650;
+}
+
+.year-option .btn {
+	min-width: 72px;
+}
+
+/* MAP STYLING */
+.indonesia-map {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible !important;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.indonesia-map svg { 
+    width: 100%; 
+    height: auto; 
+    max-height: 550px; 
+    display: block;
+}
+
+.province-path { 
+    cursor: pointer; 
+    transition: filter .15s, opacity .15s; 
+    stroke: #fff !important; 
+    stroke-width: 0.5;
+	fill: inherit;
+}
+
+.province-path:hover {
+	filter: brightness(1.1);
+	opacity: .85;
+}
+
+.legend {
+	display: flex;
+	align-items: center;
+	gap: .75rem;
+	font-size: .8rem;
+}
+
+.legend div {
+	width: min(420px, 60vw);
+	height: 12px;
+	border-radius: 999px;
+	background: linear-gradient(90deg, #e8e8e8, #785a20);
+}
+
+.province-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; padding: 1rem 1.25rem;
+	border: 1px solid var(--bs-border-color);
+	border-radius: .75rem;
+	background: var(--bs-tertiary-bg);
+}
+
+@media(max-width:767.98px){ 
+    .dashboard-card { padding: 1rem; } 
+    .radar-wrap { height: 350px; } 
+    .indonesia-map { min-height: 250px; }
+}
+
+
+/* Zoom & Pan untuk Peta */
+.map-wrapper { 
+    position: relative; 
+    cursor: grab; 
+    overflow: hidden; 
+    background: var(--bs-tertiary-bg);
+}
+
+.map-wrapper:active {
+	cursor: grabbing;
+}
+
+.indonesia-map svg { 
+    transform-origin: 0 0;
+    transition: transform 0.1s ease-out; 
+}
+
+/* Tooltip Khusus Papua (Sebelah kiri) */
+.map-tooltip.left-align {
+    transform: translateX(-110%);
+}
+
+/* Warna Tombol Tahun Cerah */
+.btn-check:checked + .btn-outline-primary.y-color-0 {
+	background-color: #FF5733;
+	border-color: #FF5733;
+	color: #fff;
+}
+
+.btn-check:checked + .btn-outline-primary.y-color-1 {
+	background-color: #33FF57;
+	border-color: #33FF57;
+	color: #000;
+}
+
+.btn-check:checked + .btn-outline-primary.y-color-2 {
+	background-color: #3357FF;
+	border-color: #3357FF;
+	color: #fff;
+}
+
+.btn-check:checked + .btn-outline-primary.y-color-3 {
+	background-color: #F333FF;
+	border-color: #F333FF;
+	color: #fff;
+}
+
+.btn-check:checked + .btn-outline-primary.y-color-4 {
+	background-color: #33FFF3;
+	border-color: #33FFF3;
+	color: #000;
+}
+
+.btn-check:checked + .btn-outline-primary.y-color-5 {
+	background-color: #FFD433;
+	border-color: #FFD433;
+	color: #000;
+}
